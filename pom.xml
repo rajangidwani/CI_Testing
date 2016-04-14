@@ -9,6 +9,7 @@
 
     <properties>
         <tomcat.version>7.0.52</tomcat.version>
+        <hibernate.version>4.3.5.Final</hibernate.version>
     </properties>
 
     <parent>
@@ -46,6 +47,31 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>1.2.5.RELEASE</version>
         </dependency>
+
+        <!--Hibernate-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+
     </dependencies>
 
     <build>
